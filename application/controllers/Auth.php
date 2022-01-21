@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Auth extends CI_Controller {
+class Auth extends CI_Controller
+{
 
 	public function __construct()
 	{
@@ -52,6 +53,7 @@ class Auth extends CI_Controller {
 			$this->session->set_flashdata('status_msg', 'ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง');
 			// return redirect('auth/login_form');
 			return redirect(base_url());
+			// echo 'ผิดไอ้สัส';
 		}
 	}
 
@@ -64,4 +66,12 @@ class Auth extends CI_Controller {
 	}
 
 
+	public function testAPI()
+	{
+		// $post = $this->input->post();
+		$get = $this->input->post();
+		if (isset($get['name'])) {
+			echo $get['name'];
+		}
+	}
 }

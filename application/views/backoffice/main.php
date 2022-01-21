@@ -108,6 +108,7 @@ $googleApiKey = $this->config->item('google_maps_api_key');
 							$this->load->view($content);
 						}
 						?>
+						
 					</div>
 					<!-- /.row -->
 				</div><!-- /.container-fluid -->

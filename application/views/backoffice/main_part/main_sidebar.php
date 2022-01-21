@@ -71,7 +71,7 @@
 				<!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
 				<li class="nav-item">
-					<a href="" class="nav-link ">
+					<a href="<?php echo base_url('categories');?>" class="nav-link ">
 						<!-- <i class="fas fa-circle nav-icon"></i> -->
 						<i class="fas fa-tachometer-alt nav-icon"></i>
 						<p>จัดการข้อมูลประเภทสถานที่</p>
