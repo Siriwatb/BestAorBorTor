@@ -17,7 +17,7 @@ class Auth extends CI_Controller {
 		} else {
 			session_destroy();
 			unset($_SESSION['user']);
-			redirect('home');
+			redirect(base_url());
 			// redirect('auth/login_form');
 		}
 	}
@@ -50,7 +50,8 @@ class Auth extends CI_Controller {
 		} else {
 			$this->session->set_flashdata('status', 'error');
 			$this->session->set_flashdata('status_msg', 'ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง');
-			return redirect('auth/login_form');
+			// return redirect('auth/login_form');
+			return redirect(base_url());
 		}
 	}
 
